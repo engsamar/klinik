@@ -1,0 +1,62 @@
+@{
+    ViewData["Title"] = "Appointments";
+}
+<!-- Page Header Start -->
+
+<div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container py-5">
+        <h1 class="display-3 text-white mb-3 animated slideInDown">Appointments</h1>
+        <nav aria-label="breadcrumb animated slideInDown">
+            <ol class="breadcrumb text-uppercase mb-0">
+                <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
+                <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
+                <li class="breadcrumb-item text-primary active" aria-current="page">Appointments</li>
+            </ol>
+        </nav>
+    </div>
+</div>
+<!-- Page Header End -->
+
+
+<div class="container-xxl py-5">
+<div class="container">
+    <div class="row g-5">
+
+    <table class="table table-hover">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile</th>
+            <th scope="col">Date</th>
+            
+            <th scope="col">Status</th>
+            <th scope="col">Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <th scope="row">@item.Id</th>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Mobile</td>
+             
+                @if(item.Status)
+                {
+                    <td><span class="badge text-bg-primary">@item.Status</span></td>
+                }
+                else
+                {
+                    <td><span class="badge text-bg-danger">@item.Status</span></td>
+                }
+               
+            </tr>
+        }
+        </tbody>
+    </table>
+</div>
+</div>
+</div>
