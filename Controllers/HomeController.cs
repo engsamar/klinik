@@ -20,13 +20,21 @@ public class HomeController : Controller
         return View();
     }
     
-    public ViewResult Doctors( int page = 1)
+    public ViewResult Doctors(DoctorFilterVM doctorFilterVM, int page = 1)
     {
-        // This method would typically retrieve a list of doctors from a database or service.
-        
         var doctors = _context.Doctors.Include(e => e.Category).AsQueryable();
+        if (doctorFilterVM.DoctorName is not null)
+        {
+            doctors = doctors.Where(e => e.Name.Contains(doctorFilterVM.DoctorName));
+            ViewBag.ProductName = doctorFilterVM.DoctorName;
+        }
+       
+        if (doctorFilterVM.CategoryId is not null)
+        {
+            doctors = doctors.Where(e => e.CategoryId == doctorFilterVM.CategoryId);
+            ViewBag.CategoryId = doctorFilterVM.CategoryId;
+        }
 
-        // Pagination
         double totalPages = Math.Ceiling(doctors.Count() / 8.0);
         int currentPage = page;
 
@@ -34,6 +42,9 @@ public class HomeController : Controller
         ViewBag.CurrentPage = currentPage;
 
         doctors = doctors.Skip((page -1) * 8).Take(8);
+        
+        var categories = _context.Categories.ToList();
+        ViewBag.Categories = categories;
         return View(doctors.ToList());
     }
     

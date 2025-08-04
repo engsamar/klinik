@@ -159,3 +159,4 @@
 /Users/zamar/RiderProjects/Klinik/obj/Debug/net9.0/compressed/y3pofw1n5c-uydiqv09h2.gz
 /Users/zamar/RiderProjects/Klinik/obj/Debug/net9.0/compressed/50ywkew86o-apjpr24drr.gz
 /Users/zamar/RiderProjects/Klinik/obj/Debug/net9.0/compressed/ucjhb4sa8s-v5kyrhpytd.gz
+/Users/zamar/RiderProjects/Klinik/obj/Debug/net9.0/Klinik.sourcelink.json
