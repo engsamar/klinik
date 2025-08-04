@@ -63,7 +63,7 @@ public class HomeController : Controller
         return RedirectToAction(nameof(Index));
     }
     
-    public IActionResult Appointment([FromRoute] int id)
+    public IActionResult Doctor([FromRoute] int id)
     {
         var doctor = _context.Doctors.Include(e => e.Category).FirstOrDefault(e => e.Id == id);
 

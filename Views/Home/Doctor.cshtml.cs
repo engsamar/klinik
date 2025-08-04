@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 
 namespace Klinik.Views.Home;
 
-public class Appointment : PageModel
+public class Doctor : PageModel
 {
     public void OnGet()
     {

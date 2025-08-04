@@ -32,16 +32,16 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/zamar/RiderProjects/Klinik/Views/Home/Appointment.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BcHBvaW50bWVudC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/zamar/RiderProjects/Klinik/Views/Home/Appointments.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BcHBvaW50bWVudHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/zamar/RiderProjects/Klinik/Views/Home/Contact.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Db250YWN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/zamar/RiderProjects/Klinik/Views/Home/Doctor.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Eb2N0b3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/zamar/RiderProjects/Klinik/Views/Home/Doctors.cshtml]

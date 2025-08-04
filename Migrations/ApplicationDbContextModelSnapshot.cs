@@ -22,7 +22,7 @@ namespace Klinik.Migrations
 
             MySqlModelBuilderExtensions.AutoIncrementColumns(modelBuilder);
 
-            modelBuilder.Entity("Klinik.Models.Appointment", b =>
+            modelBuilder.Entity("Klinik.Models.Doctor", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -129,7 +129,7 @@ namespace Klinik.Migrations
                     b.ToTable("Doctors");
                 });
 
-            modelBuilder.Entity("Klinik.Models.Appointment", b =>
+            modelBuilder.Entity("Klinik.Models.Doctor", b =>
                 {
                     b.HasOne("Klinik.Models.Doctor", "Doctor")
                         .WithMany("Appointments")
